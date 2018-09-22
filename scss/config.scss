@@ -41,3 +41,33 @@ $background-opacity: 0.9;
 @mixin ease-out {
   transition: all 1s ease-out;
 }
+
+// Media Query Mixin
+
+// small up to 500px
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+// Medium  Screens up to 768px
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+// Large Screens  range between 769 and 1170
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+// XLarge Screens  range  jus above 1170 which is 1171 a nd above
+@mixin mediaXl {
+  @media screen and (min-width: 1171px) {
+    @content;
+  }
+}
