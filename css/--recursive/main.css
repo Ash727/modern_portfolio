@@ -32,10 +32,10 @@
   .menu.show {
     visibility: visible; }
   .menu-branding, .menu-nav {
+    justify-content: center;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    justify-content: center;
     float: left;
     width: 50%;
     height: 100vh;
@@ -56,11 +56,25 @@
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portiat {
-      width: 250px;
-      height: 250px;
-      background: url("../../images/Gon13.png");
+      position: absolute;
+      width: 270px;
+      height: 270px;
+      background-color: black;
       border: solid #eece1a 3px;
-      border-radius: 50%; }
+      border-radius: 50%;
+      text-align: center;
+      display: inline;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .menu-branding .portiat .Initial {
+        border-top: solid #fff 3px;
+        border-bottom: solid #fff 3px;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        font-size: 420%; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 1s ease-out; }
@@ -148,6 +162,10 @@ header {
     color: white;
     transition: all 1.5s ease-out; }
 
+.text-turnary {
+  color: #131211;
+  font-weight: bold; }
+
 main {
   padding: 4rem;
   min-height: calc(100vh - 60px); }
@@ -176,7 +194,10 @@ main {
   .about-info .bio {
     grid-area: bio; }
   .about-info .bio {
-    grid-area: bio; }
+    grid-area: bio;
+    background: #515151;
+    padding: 1.5em;
+    border-bottom: #131211 5px solid; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
@@ -186,7 +207,7 @@ main {
   .about-info .job {
     background: #515151;
     padding: 0.5rem;
-    border-bottom: #eece1a 5px solid; }
+    border-bottom: #131211 5px solid; }
 
 .projects {
   display: grid;
@@ -199,29 +220,6 @@ main {
       opacity: 0.5;
       border-color: #eece1a;
       transition: all 1s ease-out; }
-
-.boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin-top: 1rem;
-  align-items: center;
-  align-content: center;
-  flex-direction: column; }
-  .boxes div {
-    border: #fff solid 1px;
-    padding: 0.5rem 0.5rem;
-    font-size: 30px;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    transition: all 1s ease-out; }
-    .boxes div:hover {
-      background: #eece1a;
-      padding: 1.5rem 1.5rem;
-      color: #000;
-      transition: all 1s ease-out; }
-      .boxes div:hover span {
-        color: #000; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
