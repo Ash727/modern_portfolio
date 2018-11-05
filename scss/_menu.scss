@@ -51,10 +51,10 @@
   }
   &-branding,
   &-nav {
+    justify-content: center;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    justify-content: center;
     float: left;
     width: 50%;
     height: 100vh;
@@ -84,11 +84,40 @@
     }
 
     .portiat {
-      width: 250px;
-      height: 250px;
-      background: url("../../images/Gon13.png");
+      position: absolute;
+
+      width: 270px;
+      height: 270px;
+      // @font-face { font-family: JuneBug; src: url('JUNEBUG.TTF'); }
+      // background: url("../../images/Gon13.png");
+      background-color: black;
+
       border: solid $secondary-color 3px;
       border-radius: 50%;
+      text-align: center;
+      //      padding: 75px;
+      // padding: 150px;
+      display: inline;
+      overflow: hidden;
+
+      display: flex;
+      // flex-flow: column wrap;
+      align-items: center;
+      justify-content: center;
+
+      .Initial {
+        border-top: solid #fff 3px;
+        border-bottom: solid #fff 3px;
+
+        // position: absolute;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        font-size: 420%;
+        // border: solid $secondary-color 3px;
+
+        // color: red;
+      }
     }
   }
 

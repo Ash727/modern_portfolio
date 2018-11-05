@@ -1,0 +1,8 @@
+@font-face {
+  font-family: KHF;
+  src: url("Ancient.ttf");
+}
+.Initial {
+  font-family: KHF;
+  color: #eece1a;
+}

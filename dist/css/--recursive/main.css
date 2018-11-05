@@ -32,10 +32,10 @@
   .menu.show {
     visibility: visible; }
   .menu-branding, .menu-nav {
+    justify-content: center;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    justify-content: center;
     float: left;
     width: 50%;
     height: 100vh;
@@ -56,11 +56,25 @@
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portiat {
-      width: 250px;
-      height: 250px;
-      background: url("../../images/Gon13.png");
+      position: absolute;
+      width: 270px;
+      height: 270px;
+      background-color: black;
       border: solid #eece1a 3px;
-      border-radius: 50%; }
+      border-radius: 50%;
+      text-align: center;
+      display: inline;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .menu-branding .portiat .Initial {
+        border-top: solid #fff 3px;
+        border-bottom: solid #fff 3px;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        font-size: 420%; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 1s ease-out; }
