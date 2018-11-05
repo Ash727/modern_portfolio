@@ -162,6 +162,10 @@ header {
     color: white;
     transition: all 1.5s ease-out; }
 
+.text-turnary {
+  color: #131211;
+  font-weight: bold; }
+
 main {
   padding: 4rem;
   min-height: calc(100vh - 60px); }
@@ -190,7 +194,10 @@ main {
   .about-info .bio {
     grid-area: bio; }
   .about-info .bio {
-    grid-area: bio; }
+    grid-area: bio;
+    background: #515151;
+    padding: 1.5em;
+    border-bottom: #131211 5px solid; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
@@ -200,7 +207,7 @@ main {
   .about-info .job {
     background: #515151;
     padding: 0.5rem;
-    border-bottom: #eece1a 5px solid; }
+    border-bottom: #131211 5px solid; }
 
 .projects {
   display: grid;

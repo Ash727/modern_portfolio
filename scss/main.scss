@@ -51,6 +51,10 @@ header {
     transition: all 1.5s ease-out;
   }
 }
+.text-turnary {
+  color: $Ternary-color;
+  font-weight: bold;
+}
 
 main {
   padding: 4rem;
@@ -98,6 +102,9 @@ main {
   }
   .bio {
     grid-area: bio;
+    background: lighten($primary-color, 5);
+    padding: 1.5em;
+    border-bottom: $Ternary-color 5px solid;
   }
 
   .job-1 {
@@ -115,7 +122,7 @@ main {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     // border: solid 1px;
-    border-bottom: $secondary-color 5px solid;
+    border-bottom: $Ternary-color 5px solid;
   }
 }
 
